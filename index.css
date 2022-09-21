@@ -1,0 +1,146 @@
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  --primary-color: #000;
+  --secondary-color: #6200ee;
+  --tertiary-color: #fff;
+}
+
+body {
+  margin: 0;
+  color: var(--tertiary-color);
+}
+
+.background-ps {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.background-sp {
+}
+
+#capa {
+  height: 1080px;
+}
+
+#capa #row-capa {
+  display: inline-block;
+  position: absolute;
+  margin: 280px 500px;
+}
+
+#row-capa img {
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 2px solid blue;
+  box-shadow: red 0px 0px 15px;
+}
+
+#row-capa h1 {
+  display: inline-block;
+  color: var(--tertiary-color);
+  position: relative;
+
+  top: -180px;
+  left: 140px;
+}
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+nav {
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: #fff 15px 0px 0px;
+  z-index: 1;
+}
+
+ul {
+  display: inline-block;
+  float: right;
+  margin: 0;
+}
+
+li {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 3rem;
+  transition: color, background-color 0.3s;
+}
+
+li:hover {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #6200ee;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+#dark-light p {
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  margin-left: 5px;
+}
