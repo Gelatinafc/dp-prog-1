@@ -27,9 +27,9 @@ body {
 }
 
 #capa #row-capa {
-  display: inline-block;
+
   position: absolute;
-  margin: 280px 500px;
+  margin: 280px 0 0 280px;
 }
 
 #row-capa img {
@@ -37,7 +37,7 @@ body {
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  border: 2px solid blue;
+  border: 2px solid var(--tertiary-color);
   box-shadow: red 0px 0px 15px;
 }
 
@@ -45,9 +45,8 @@ body {
   display: inline-block;
   color: var(--tertiary-color);
   position: relative;
-
   top: -180px;
-  left: 140px;
+  left: 50px;
 }
 h1 {
   font-size: 4rem;
@@ -62,7 +61,7 @@ nav {
   position: fixed;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: #fff 15px 0px 0px;
+  box-shadow: #fff 15px 0px 3px 0px;
   z-index: 1;
 }
 
@@ -100,6 +99,7 @@ li:hover {
   background-color: #000;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  display: inline-block;
 }
 
 .slider:before {
@@ -130,7 +130,7 @@ input:checked + .slider:before {
 .switch input {
   opacity: 0;
   width: 0;
-  height: 0;
+  height: 1.5em;
 }
 .switch {
   position: relative;
@@ -143,4 +143,8 @@ input:checked + .slider:before {
   font-size: 30px;
   display: inline-block;
   margin-left: 5px;
+}
+#dark-light {
+  display: inline-block;
+  line-height: normal;
 }
