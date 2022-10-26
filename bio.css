@@ -1,0 +1,130 @@
+:root {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    --primary-color: #000;
+    --secondary-color: #6200ee;
+    --tertiary-color: #fff;
+  }
+  
+  body {
+    margin: 0;
+    color: var(--tertiary-color);
+  }
+  
+  .background-ps {
+    background-image: linear-gradient(
+      to right,
+      var(--primary-color),
+      var(--secondary-color)
+    );
+  }
+  
+  .background-sp {
+  }
+  
+  #capa {
+    height: 1080px;
+  }
+  
+  #capa #row-capa {
+  
+    position: absolute;
+    margin: 280px 0 0 280px;
+  }
+  
+  #row-capa img {
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid var(--tertiary-color);
+    box-shadow: red 0px 0px 15px;
+  }
+  
+  #row-capa h1 {
+    display: inline-block;
+    color: var(--tertiary-color);
+    position: relative;
+    top: -180px;
+    left: 50px;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  nav {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: #fff 15px 0px 3px 0px;
+    z-index: 1;
+  }
+  
+  ul {
+    display: inline-block;
+    float: right;
+    margin: 0;
+  }
+  
+  li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 3rem;
+    transition: color, background-color 0.3s;
+  }
+  
+  li:hover {
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+  }
+
+  #quadrado {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 450px;
+    right: 200px;
+    border-radius: 20px 0px 20px 0px;
+    opacity: 20%;
+    
+
+    
+}
+
+#quadrado2 {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 500px;
+    border-radius: 20px 0px 20px 0px;
+  
+}
+
+#retangulo {
+    width: 900px;
+    height: 172px;
+    background-color: black;
+    position: relative;
+   
+    border-radius: 20px 0px 20px 0px;
+    top: -250px;
+    right: 500px;
+  
+}
+
+.container {
+    text-align: center;
+    font-size: large;
+
+}
